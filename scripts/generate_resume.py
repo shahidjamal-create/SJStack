@@ -1,0 +1,65 @@
+from fpdf import FPDF
+from pathlib import Path
+
+output_path = Path(__file__).resolve().parent.parent / 'public'
+output_path.mkdir(exist_ok=True)
+
+pdf = FPDF()
+pdf.set_auto_page_break(auto=True, margin=15)
+pdf.add_page()
+pdf.set_font('Helvetica', 'B', 22)
+pdf.set_text_color(4, 102, 245)
+pdf.cell(0, 12, 'Shahid Jamal K', ln=True)
+pdf.set_font('Helvetica', '', 12)
+pdf.set_text_color(80, 85, 97)
+pdf.cell(0, 8, 'Programmer', ln=True)
+pdf.ln(8)
+
+pdf.set_text_color(40, 45, 50)
+pdf.set_font('Helvetica', 'B', 12)
+pdf.cell(0, 8, 'Contact', ln=True)
+pdf.set_font('Helvetica', '', 11)
+pdf.multi_cell(0, 6, 'shahidjamal13258@gmail.com | 6384103958 | Tamilnadu, India')
+pdf.ln(6)
+
+pdf.set_text_color(4, 102, 245)
+pdf.set_font('Helvetica', 'B', 12)
+pdf.cell(0, 8, 'Profile', ln=True)
+pdf.set_text_color(40, 45, 50)
+pdf.set_font('Helvetica', '', 11)
+pdf.multi_cell(0, 6, 'I am a BCA graduate passionate about building creative and responsive web applications. I have a strong foundation in HTML, CSS, and JavaScript, with growing skills in modern frameworks. I enjoy designing clean, user-friendly interfaces and improving user experiences. I am eager to learn new technologies and stay updated with industry trends.')
+pdf.ln(6)
+
+pdf.set_text_color(4, 102, 245)
+pdf.set_font('Helvetica', 'B', 12)
+pdf.cell(0, 8, 'Skills', ln=True)
+pdf.set_text_color(40, 45, 50)
+pdf.set_font('Helvetica', '', 11)
+pdf.multi_cell(0, 6, 'Frontend: HTML5, CSS3, JavaScript, React.js.\nOther tools: Git/GitHub, VS Code, Figma, version control, team collaboration.')
+pdf.ln(6)
+
+pdf.set_text_color(4, 102, 245)
+pdf.set_font('Helvetica', 'B', 12)
+pdf.cell(0, 8, 'Education', ln=True)
+pdf.set_text_color(40, 45, 50)
+pdf.set_font('Helvetica', '', 11)
+pdf.multi_cell(0, 6, 'Bachelor of Computer Application (BCA)\nMerit Haji Ismail Sahib Arts & Science College\n06/2024 - Present | Pernambut, Vellore Dist\nMy coursework has provided me with a strong foundation in computer programming, web development, and software concepts. I have gained hands-on experience in coding, problem-solving, and developing web-based projects.')
+pdf.ln(6)
+
+pdf.set_text_color(4, 102, 245)
+pdf.set_font('Helvetica', 'B', 12)
+pdf.cell(0, 8, 'Professional Experience', ln=True)
+pdf.set_text_color(40, 45, 50)
+pdf.set_font('Helvetica', '', 11)
+pdf.multi_cell(0, 6, 'Web Development at TIET\n09/2025 - Present | Pernambut, Vellore Dist\nI am currently gaining practical experience in web development through a course at TIET. This training is helping me strengthen my skills in HTML5, CSS3, and frontend technologies.')
+pdf.ln(6)
+
+pdf.set_text_color(4, 102, 245)
+pdf.set_font('Helvetica', 'B', 12)
+pdf.cell(0, 8, 'Languages', ln=True)
+pdf.set_text_color(40, 45, 50)
+pdf.set_font('Helvetica', '', 11)
+pdf.multi_cell(0, 6, '- English\n- Tamil\n- Urdu')
+
+pdf.output(output_path / 'resume.pdf')
+print('Generated', output_path / 'resume.pdf')
