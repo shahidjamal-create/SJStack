@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+
+# Production build
+dist
+dist-ssr
+
+# Local env files
+.env
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor & OS files
+.DS_Store
+.vscode
+.idea
