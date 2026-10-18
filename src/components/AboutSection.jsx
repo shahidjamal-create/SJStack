@@ -42,9 +42,6 @@ export default function AboutSection() {
                                 <p>
                                     Alongside my internship experience, I’ve built and worked on multiple personal projects, including web applications and my own portfolio website. These projects have helped me improve my problem-solving skills, understand real-world development practices, and gain confidence in building complete and responsive interfaces.
                                 </p>
-                                <p>
-                                    Currently, I’m focused on developing more projects, improving my full-stack capabilities, and exploring modern technologies. My goal is to write clean and efficient code while creating polished digital experiences that are simple, responsive, and enjoyable to use.
-                                </p>
                             </motion.div>
 
                             <motion.div variants={fadeUp} className="mt-6 flex flex-wrap justify-center gap-4">

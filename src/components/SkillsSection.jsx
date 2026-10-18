@@ -15,9 +15,9 @@ const skills = [
 const skillLevels = [
     { name: 'HTML', percent: 90 },
     { name: 'CSS', percent: 75 },
-    { name: 'JAVASCRPIT', percent: 85 },
+    { name: 'JAVASCRIPT', percent: 85 },
     { name: 'REACT.JS', percent: 80 },
-    { name: 'TEL', percent: 60 },
+    { name: 'TAILWIND CSS', percent: 70 },
     { name: 'PHP', percent: 68 }
 ];
 
